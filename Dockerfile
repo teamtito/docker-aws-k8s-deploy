@@ -13,9 +13,10 @@ ARG DOCKER_COMPOSE_URL="https://github.com/docker/compose/releases/download/${DO
 ARG DOCKER_COMPOSE_SHA256
 ARG DOCKER_COMPOSE_SHA256_URL="https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-Linux-x86_64.sha256"
 
-ARG KUBECTL_VERSION="v1.18.2"
+ARG KUBECTL_VERSION="v1.19.2"
 ARG KUBECTL_URL="https://storage.googleapis.com/kubernetes-release/release/${KUBECTL_VERSION}/bin/linux/amd64/kubectl"
-ARG KUBECTL_SHA256="6ea8261b503c6c63d616878837dc70b758d4a3aeb9996ade8e83b51aedac9698"
+ARG KUBECTL_SHA256
+ARG KUBECTL_SHA256_URL="https://storage.googleapis.com/kubernetes-release/release/${KUBECTL_VERSION}/bin/linux/amd64/kubectl.sha256"
 
 ARG HELM_VERSION="v3.2.0"
 ARG HELM_SHA256="4c3fd562e64005786ac8f18e7334054a24da34ec04bbd769c206b03b8ed6e457"
@@ -30,8 +31,8 @@ RUN curl -L "${DOCKER_COMPOSE_URL}" -o /tmp/docker-compose \
     && chmod +x /tmp/docker-compose
 
 RUN curl -L "${KUBECTL_URL}" -o /tmp/kubectl \
-    && echo "${KUBECTL_SHA256}  /tmp/kubectl" | sha256sum -c \
-    && chmod a+x /tmp/kubectl
+    && echo "${KUBECTL_SHA256:-$(curl -sSL $KUBECTL_SHA256_URL)}  /tmp/kubectl" | sha256sum -c \
+    && chmod +x /tmp/kubectl
 
 RUN curl -L "${HELM_URL}" -o "/tmp/${HELM_ARCHIVE}" \
     && echo "${HELM_SHA256}  /tmp/${HELM_ARCHIVE}" | sha256sum -c \

@@ -1,4 +1,5 @@
 # UNRELEASED
+- kubectl: [1.19.2](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.19.md#v1192)
 - docker-compose: [1.27.4](https://docs.docker.com/compose/release-notes/#1274)
 - docker: [19.03.13](https://docs.docker.com/engine/release-notes/#190313)
 - alpine: [3.12.0](https://alpinelinux.org/posts/Alpine-3.12.0-released.html)
