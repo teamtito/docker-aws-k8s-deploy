@@ -9,7 +9,7 @@ Use this one at your own risk!
 ## Details
 
 Tags:
-  * `latest`
+  * `2.0.52`
 	* alpine `3.12.0`
     * aws `2.0.52`
     * docker `19.03.13`
@@ -26,5 +26,5 @@ Tags:
 ## Docker pull
 
 ```shell
-docker pull teamtito/aws-k8s-deploy:latest
+docker pull teamtito/aws-k8s-deploy:2.0.52
 ```
