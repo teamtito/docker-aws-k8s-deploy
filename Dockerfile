@@ -39,7 +39,7 @@ RUN curl -L "${HELM_URL}" -o "/tmp/${HELM_ARCHIVE}" \
     && echo "${HELM_SHA256:-$(curl -sSL $HELM_SHA256_URL | grep -Eo '^[^ ]+')}  /tmp/${HELM_ARCHIVE}" | sha256sum -c \
     && tar -zxvf /tmp/${HELM_ARCHIVE} -C /tmp
 
-FROM amazon/aws-cli:2.0.12
+FROM amazon/aws-cli:2.0.52
 
 # Metadata
 LABEL maintainer="Evil Martians <admin@evilmartians.com>"
