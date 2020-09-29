@@ -14,7 +14,7 @@ Tags:
     * aws `2.0.12`
     * docker `19.03.13`
     * docker-compose `1.27.4`
-    * helm `3.2.0`
+    * helm `3.3.4`
     * kubectl `1.19.2`
   * `2.0.12`
     * aws `2.0.12`
