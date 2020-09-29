@@ -9,6 +9,13 @@ Use this one at your own risk!
 ## Details
 
 Tags:
+  * `latest`
+	* alpine `3.12.0`
+    * aws `2.0.12`
+    * docker `19.03.8`
+    * docker-compose `1.25.5`
+    * helm `3.2.0`
+    * kubectl `1.18.2`
   * `2.0.12`
     * aws `2.0.12`
     * docker `19.03.8`
@@ -19,5 +26,5 @@ Tags:
 ## Docker pull
 
 ```shell
-docker pull teamtito/aws-k8s-deploy:2.0.12
+docker pull teamtito/aws-k8s-deploy:latest
 ```

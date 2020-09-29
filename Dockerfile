@@ -2,9 +2,10 @@
 # the final image size drastically and it is important
 # to reduce deploy process duration.
 
-FROM docker:19.03.8 as static-docker-source
+ARG ALPINE_VERSION="3.12.0"
 
-FROM alpine:3.11.6 as downloader
+FROM docker:19.03.8 as static-docker-source
+FROM alpine:${ALPINE_VERSION} as downloader
 
 ARG DOCKER_COMPOSE_VERSION="1.25.5"
 ARG DOCKER_COMPOSE_URL="https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-Linux-x86_64"
@@ -19,8 +20,8 @@ ARG HELM_SHA256="4c3fd562e64005786ac8f18e7334054a24da34ec04bbd769c206b03b8ed6e45
 ARG HELM_ARCHIVE="helm-${HELM_VERSION}-linux-amd64.tar.gz"
 ARG HELM_URL="https://get.helm.sh/${HELM_ARCHIVE}"
 
-RUN apk add --update ca-certificates \
-    && apk add --update curl
+RUN apk -U --no-cache upgrade \
+    && apk add --no-cache ca-certificates curl
 
 RUN curl -L "${DOCKER_COMPOSE_URL}" -o /tmp/docker-compose \
     && echo "${DOCKER_COMPOSE_SHA256}  /tmp/docker-compose" | sha256sum -c \

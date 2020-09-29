@@ -1,4 +1,5 @@
 # UNRELEASED
+- alpine: [3.12.0](https://alpinelinux.org/posts/Alpine-3.12.0-released.html)
 
 # 2.0.12 (11.05.2020)
 - alpine: [3.11.6](https://alpinelinux.org/posts/Alpine-3.11.6-released.html)
