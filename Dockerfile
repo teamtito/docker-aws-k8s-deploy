@@ -2,9 +2,10 @@
 # the final image size drastically and it is important
 # to reduce deploy process duration.
 
+ARG DOCKER_VERSION="19.03.13"
 ARG ALPINE_VERSION="3.12.0"
 
-FROM docker:19.03.8 as static-docker-source
+FROM docker:${DOCKER_VERSION} as static-docker-source
 FROM alpine:${ALPINE_VERSION} as downloader
 
 ARG DOCKER_COMPOSE_VERSION="1.25.5"
