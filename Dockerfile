@@ -18,8 +18,9 @@ ARG KUBECTL_URL="https://storage.googleapis.com/kubernetes-release/release/${KUB
 ARG KUBECTL_SHA256
 ARG KUBECTL_SHA256_URL="https://storage.googleapis.com/kubernetes-release/release/${KUBECTL_VERSION}/bin/linux/amd64/kubectl.sha256"
 
-ARG HELM_VERSION="v3.2.0"
-ARG HELM_SHA256="4c3fd562e64005786ac8f18e7334054a24da34ec04bbd769c206b03b8ed6e457"
+ARG HELM_VERSION="v3.3.4"
+ARG HELM_SHA256
+ARG HELM_SHA256_URL="https://get.helm.sh/helm-${HELM_VERSION}-linux-amd64.tar.gz.sha256sum"
 ARG HELM_ARCHIVE="helm-${HELM_VERSION}-linux-amd64.tar.gz"
 ARG HELM_URL="https://get.helm.sh/${HELM_ARCHIVE}"
 
@@ -35,7 +36,7 @@ RUN curl -L "${KUBECTL_URL}" -o /tmp/kubectl \
     && chmod +x /tmp/kubectl
 
 RUN curl -L "${HELM_URL}" -o "/tmp/${HELM_ARCHIVE}" \
-    && echo "${HELM_SHA256}  /tmp/${HELM_ARCHIVE}" | sha256sum -c \
+    && echo "${HELM_SHA256:-$(curl -sSL $HELM_SHA256_URL | grep -Eo '^[^ ]+')}  /tmp/${HELM_ARCHIVE}" | sha256sum -c \
     && tar -zxvf /tmp/${HELM_ARCHIVE} -C /tmp
 
 FROM amazon/aws-cli:2.0.12

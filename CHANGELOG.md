@@ -1,4 +1,5 @@
 # UNRELEASED
+- helm: [3.3.4](https://github.com/helm/helm/releases/tag/v3.3.4)
 - kubectl: [1.19.2](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.19.md#v1192)
 - docker-compose: [1.27.4](https://docs.docker.com/compose/release-notes/#1274)
 - docker: [19.03.13](https://docs.docker.com/engine/release-notes/#190313)
