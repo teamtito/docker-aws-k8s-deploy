@@ -11,7 +11,7 @@ Use this one at your own risk!
 Tags:
   * `latest`
 	* alpine `3.12.0`
-    * aws `2.0.12`
+    * aws `2.0.52`
     * docker `19.03.13`
     * docker-compose `1.27.4`
     * helm `3.3.4`
