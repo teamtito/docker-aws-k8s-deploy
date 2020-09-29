@@ -13,13 +13,13 @@ Tags:
 	* alpine `3.12.0`
     * aws `2.0.12`
     * docker `19.03.13`
-    * docker-compose `1.25.5`
+    * docker-compose `1.27.4`
     * helm `3.2.0`
     * kubectl `1.18.2`
   * `2.0.12`
     * aws `2.0.12`
     * docker `19.03.13`
-    * docker-compose `1.25.5`
+    * docker-compose `1.27.4`
     * helm `3.2.0`
     * kubectl `1.18.2`
 

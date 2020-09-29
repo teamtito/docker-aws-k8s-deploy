@@ -8,9 +8,10 @@ ARG ALPINE_VERSION="3.12.0"
 FROM docker:${DOCKER_VERSION} as static-docker-source
 FROM alpine:${ALPINE_VERSION} as downloader
 
-ARG DOCKER_COMPOSE_VERSION="1.25.5"
+ARG DOCKER_COMPOSE_VERSION="1.27.4"
 ARG DOCKER_COMPOSE_URL="https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-Linux-x86_64"
-ARG DOCKER_COMPOSE_SHA256="1cb7ecccc17c8d5f1888f9e2b3211b07e35c86d0010a6c0f711fe65ef5b69528"
+ARG DOCKER_COMPOSE_SHA256
+ARG DOCKER_COMPOSE_SHA256_URL="https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-Linux-x86_64.sha256"
 
 ARG KUBECTL_VERSION="v1.18.2"
 ARG KUBECTL_URL="https://storage.googleapis.com/kubernetes-release/release/${KUBECTL_VERSION}/bin/linux/amd64/kubectl"
@@ -25,8 +26,8 @@ RUN apk -U --no-cache upgrade \
     && apk add --no-cache ca-certificates curl
 
 RUN curl -L "${DOCKER_COMPOSE_URL}" -o /tmp/docker-compose \
-    && echo "${DOCKER_COMPOSE_SHA256}  /tmp/docker-compose" | sha256sum -c \
-    && chmod a+x /tmp/docker-compose
+    && echo "${DOCKER_COMPOSE_SHA256:-$(curl -sSL $DOCKER_COMPOSE_SHA256_URL | grep -Eo '^[^ ]+')}  /tmp/docker-compose" | sha256sum -c \
+    && chmod +x /tmp/docker-compose
 
 RUN curl -L "${KUBECTL_URL}" -o /tmp/kubectl \
     && echo "${KUBECTL_SHA256}  /tmp/kubectl" | sha256sum -c \
