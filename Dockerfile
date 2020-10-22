@@ -3,7 +3,8 @@
 # to reduce deploy process duration.
 
 ARG DOCKER_VERSION="19.03.13"
-ARG ALPINE_VERSION="3.12.0"
+ARG ALPINE_VERSION="3.12.1"
+ARG AWS_VERSION="2.0.58"
 
 FROM docker:${DOCKER_VERSION} as static-docker-source
 FROM alpine:${ALPINE_VERSION} as downloader
@@ -13,7 +14,7 @@ ARG DOCKER_COMPOSE_URL="https://github.com/docker/compose/releases/download/${DO
 ARG DOCKER_COMPOSE_SHA256
 ARG DOCKER_COMPOSE_SHA256_URL="https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-Linux-x86_64.sha256"
 
-ARG KUBECTL_VERSION="v1.19.2"
+ARG KUBECTL_VERSION="v1.19.3"
 ARG KUBECTL_URL="https://storage.googleapis.com/kubernetes-release/release/${KUBECTL_VERSION}/bin/linux/amd64/kubectl"
 ARG KUBECTL_SHA256
 ARG KUBECTL_SHA256_URL="https://storage.googleapis.com/kubernetes-release/release/${KUBECTL_VERSION}/bin/linux/amd64/kubectl.sha256"
@@ -39,7 +40,7 @@ RUN curl -L "${HELM_URL}" -o "/tmp/${HELM_ARCHIVE}" \
     && echo "${HELM_SHA256:-$(curl -sSL $HELM_SHA256_URL | grep -Eo '^[^ ]+')}  /tmp/${HELM_ARCHIVE}" | sha256sum -c \
     && tar -zxvf /tmp/${HELM_ARCHIVE} -C /tmp
 
-FROM amazon/aws-cli:2.0.52
+FROM amazon/aws-cli:${AWS_VERSION}
 
 # Metadata
 LABEL maintainer="Evil Martians <admin@evilmartians.com>"

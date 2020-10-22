@@ -1,5 +1,10 @@
 # UNRELEASED
 
+# 2.0.58 (22.10.2020)
+- aws: [2.0.58](https://github.com/aws/aws-cli/releases/tag/2.0.58)
+- kubectl: [1.19.3](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.19.md#v1193)
+- alpine: [3.12.1](https://alpinelinux.org/posts/Alpine-3.12.1-released.html)
+
 # 2.0.52 (29.09.2020)
 - aws: [2.0.52](https://github.com/aws/aws-cli/releases/tag/2.0.52)
 - helm: [3.3.4](https://github.com/helm/helm/releases/tag/v3.3.4)

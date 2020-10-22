@@ -9,6 +9,13 @@ Use this one at your own risk!
 ## Details
 
 Tags:
+  * `2.0.58`
+	* alpine `3.12.1`
+    * aws `2.0.58`
+    * docker `19.03.13`
+    * docker-compose `1.27.4`
+    * helm `3.3.4`
+    * kubectl `1.19.3`
   * `2.0.52`
 	* alpine `3.12.0`
     * aws `2.0.52`
