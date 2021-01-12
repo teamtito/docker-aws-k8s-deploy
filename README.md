@@ -33,5 +33,5 @@ Tags:
 ## Docker pull
 
 ```shell
-docker pull teamtito/aws-k8s-deploy:2.0.52
+docker pull quay.io/evl.ms/aws-k8s-deploy:2.0.52
 ```
