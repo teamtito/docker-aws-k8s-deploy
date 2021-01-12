@@ -14,7 +14,7 @@ ARG DOCKER_COMPOSE_URL="https://github.com/docker/compose/releases/download/${DO
 ARG DOCKER_COMPOSE_SHA256
 ARG DOCKER_COMPOSE_SHA256_URL="https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-Linux-x86_64.sha256"
 
-ARG KUBECTL_VERSION="v1.19.3"
+ARG KUBECTL_VERSION="v1.20.1"
 ARG KUBECTL_URL="https://storage.googleapis.com/kubernetes-release/release/${KUBECTL_VERSION}/bin/linux/amd64/kubectl"
 ARG KUBECTL_SHA256
 ARG KUBECTL_SHA256_URL="https://storage.googleapis.com/kubernetes-release/release/${KUBECTL_VERSION}/bin/linux/amd64/kubectl.sha256"
