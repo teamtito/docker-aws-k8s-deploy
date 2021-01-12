@@ -2,7 +2,7 @@
 # the final image size drastically and it is important
 # to reduce deploy process duration.
 
-ARG DOCKER_VERSION="19.03.13"
+ARG DOCKER_VERSION="20.10.2"
 ARG ALPINE_VERSION="3.12.1"
 ARG AWS_VERSION="2.0.58"
 

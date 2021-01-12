@@ -1,4 +1,5 @@
 # UNRELEASED
+- docker: [20.10.2](https://docs.docker.com/engine/release-notes/#20102)
 
 # 2.0.58 (22.10.2020)
 - aws: [2.0.58](https://github.com/aws/aws-cli/releases/tag/2.0.58)
