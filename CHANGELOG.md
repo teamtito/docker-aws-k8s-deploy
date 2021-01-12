@@ -1,4 +1,5 @@
 # UNRELEASED
+- alpine: [3.12.3](https://alpinelinux.org/posts/Alpine-3.12.3-released.html)
 - docker: [20.10.2](https://docs.docker.com/engine/release-notes/#20102)
 
 # 2.0.58 (22.10.2020)
