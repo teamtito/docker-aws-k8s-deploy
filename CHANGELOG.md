@@ -1,4 +1,5 @@
 # UNRELEASED
+- helm: [3.4.2](https://github.com/helm/helm/releases/tag/v3.4.2)
 - kubectl: [1.20.1](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.20.md#v1201)
 - alpine: [3.12.3](https://alpinelinux.org/posts/Alpine-3.12.3-released.html)
 - docker: [20.10.2](https://docs.docker.com/engine/release-notes/#20102)
