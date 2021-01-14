@@ -1,4 +1,5 @@
 # UNRELEASED
+- helm: [3.5.0](https://github.com/helm/helm/releases/tag/v3.5.0)
 
 # 2.1.17
 - aws: [2.1.17](https://github.com/aws/aws-cli/releases/tag/2.1.17)
