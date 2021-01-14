@@ -1,4 +1,5 @@
 # UNRELEASED
+- aws: [2.1.18](https://github.com/aws/aws-cli/releases/tag/2.1.18)
 - kubectl: [1.20.2](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.20.md#v1202)
 - helm: [3.5.0](https://github.com/helm/helm/releases/tag/v3.5.0)
 

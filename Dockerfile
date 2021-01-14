@@ -4,7 +4,7 @@
 
 ARG DOCKER_VERSION="20.10.2"
 ARG ALPINE_VERSION="3.12.3"
-ARG AWS_VERSION="2.1.17"
+ARG AWS_VERSION="2.1.18"
 
 FROM docker:${DOCKER_VERSION} as static-docker-source
 FROM alpine:${ALPINE_VERSION} as downloader
