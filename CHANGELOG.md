@@ -1,4 +1,6 @@
 # UNRELEASED
+
+# 2.1.19
 - aws: [2.1.19](https://github.com/aws/aws-cli/releases/tag/2.1.19)
 - alpine: [3.13.0](https://alpinelinux.org/posts/Alpine-3.13.0-released.html)
 
