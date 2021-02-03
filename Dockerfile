@@ -3,7 +3,7 @@
 # to reduce deploy process duration.
 
 ARG DOCKER_VERSION="20.10.3"
-ARG ALPINE_VERSION="3.13.0"
+ARG ALPINE_VERSION="3.13.1"
 ARG AWS_VERSION="2.1.19"
 
 FROM docker:${DOCKER_VERSION} as static-docker-source
