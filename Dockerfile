@@ -9,7 +9,7 @@ ARG AWS_VERSION="2.1.19"
 FROM docker:${DOCKER_VERSION} as static-docker-source
 FROM alpine:${ALPINE_VERSION} as downloader
 
-ARG DOCKER_COMPOSE_VERSION="1.27.4"
+ARG DOCKER_COMPOSE_VERSION="1.28.2"
 ARG DOCKER_COMPOSE_URL="https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-Linux-x86_64"
 ARG DOCKER_COMPOSE_SHA256
 ARG DOCKER_COMPOSE_SHA256_URL="https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-Linux-x86_64.sha256"

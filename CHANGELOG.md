@@ -1,4 +1,5 @@
 # UNRELEASED
+- docker-compose: [1.28.2](https://docs.docker.com/compose/release-notes/#1282)
 - helm: [3.5.1](https://github.com/helm/helm/releases/tag/v3.5.1)
 - alpine: [3.13.1](https://alpinelinux.org/posts/Alpine-3.13.1-released.html)
 - docker: [20.10.3](https://docs.docker.com/engine/release-notes/#20103)
