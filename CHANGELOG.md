@@ -1,4 +1,5 @@
 # UNRELEASED
+- aws: [2.1.23](https://github.com/aws/aws-cli/releases/tag/2.1.23)
 - docker-compose: [1.28.2](https://docs.docker.com/compose/release-notes/#1282)
 - helm: [3.5.1](https://github.com/helm/helm/releases/tag/v3.5.1)
 - alpine: [3.13.1](https://alpinelinux.org/posts/Alpine-3.13.1-released.html)
