@@ -1,4 +1,5 @@
 # UNRELEASED
+- docker: [20.10.3](https://docs.docker.com/engine/release-notes/#20103)
 
 # 2.1.19
 - aws: [2.1.19](https://github.com/aws/aws-cli/releases/tag/2.1.19)
