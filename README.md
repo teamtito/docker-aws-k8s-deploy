@@ -9,6 +9,13 @@ Use this one at your own risk!
 ## Details
 
 Tags:
+  * `2.1.23`
+    * aws `2.1.23`
+	* alpine `3.13.1`
+	* docker `20.10.3`
+    * docker-compose `1.28.2`
+	* kubectl `1.20.2`
+	* helm `3.5.1`
   * `2.1.19`
     * aws `2.1.19`
 	* alpine `3.13.0`
@@ -23,15 +30,9 @@ Tags:
     * docker-compose `1.27.4`
 	* kubectl `1.20.2`
 	* helm `3.5.0`
-  * `2.1.17`
-    * aws `2.1.17`
-	* helm `3.4.2`
-	* kubectl `1.20.1`
-	* alpine `3.12.3`
-	* docker `20.10.2`
 
 ## Docker pull
 
 ```shell
-docker pull quay.io/evl.ms/aws-k8s-deploy:2.1.17
+docker pull quay.io/evl.ms/aws-k8s-deploy:2.1.23
 ```
