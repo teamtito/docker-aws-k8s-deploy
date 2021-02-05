@@ -1,4 +1,6 @@
 # UNRELEASED
+
+# 2.1.24
 - aws: [2.1.24](https://github.com/aws/aws-cli/releases/tag/2.1.24)
 - helm: [3.5.2](https://github.com/helm/helm/releases/tag/v3.5.2)
 
