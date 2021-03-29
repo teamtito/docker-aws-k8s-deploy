@@ -18,7 +18,7 @@ ARG DOCKER_BUILDX_VERSION="v0.5.1"
 ARG DOCKER_BUILDX_URL="https://github.com/docker/buildx/releases/download/${DOCKER_BUILDX_VERSION}/buildx-${DOCKER_BUILDX_VERSION}.linux-amd64"
 ARG DOCKER_BUILDX_SHA256="5f1dda3ae598e82c3186c2766506921e6f9f51c93b5ba43f7b42b659db4aa48d"
 
-ARG KUBECTL_VERSION="v1.20.2"
+ARG KUBECTL_VERSION="v1.20.5"
 ARG KUBECTL_URL="https://storage.googleapis.com/kubernetes-release/release/${KUBECTL_VERSION}/bin/linux/amd64/kubectl"
 ARG KUBECTL_SHA256
 ARG KUBECTL_SHA256_URL="https://storage.googleapis.com/kubernetes-release/release/${KUBECTL_VERSION}/bin/linux/amd64/kubectl.sha256"

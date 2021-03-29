@@ -1,4 +1,5 @@
 # UNRELEASED
+- kubectl: [1.20.5](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.20.md#v1205)
 - helm: [3.5.3](https://github.com/helm/helm/releases/tag/v3.5.3)
 - buildx: [0.5.1](https://github.com/docker/buildx/releases/tag/v0.5.1)
 
