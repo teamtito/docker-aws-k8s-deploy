@@ -1,4 +1,5 @@
 # UNRELEASED
+- helm: [3.5.3](https://github.com/helm/helm/releases/tag/v3.5.3)
 - buildx: [0.5.1](https://github.com/docker/buildx/releases/tag/v0.5.1)
 
 # 2.1.24
