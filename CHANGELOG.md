@@ -1,4 +1,5 @@
 # UNRELEASED
+- buildx: [0.5.1](https://github.com/docker/buildx/releases/tag/v0.5.1)
 
 # 2.1.24
 - aws: [2.1.24](https://github.com/aws/aws-cli/releases/tag/2.1.24)
