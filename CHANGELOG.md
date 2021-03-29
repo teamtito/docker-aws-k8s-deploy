@@ -1,4 +1,5 @@
 # UNRELEASED
+- alpine: [3.13.3](https://alpinelinux.org/posts/Alpine-3.13.3-released.html)
 - docker-compose: [1.28.6](https://docs.docker.com/compose/release-notes/#1286)
 - docker: [20.10.5](https://docs.docker.com/engine/release-notes/#20105)
 - kubectl: [1.20.5](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.20.md#v1205)
