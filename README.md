@@ -9,6 +9,14 @@ Use this one at your own risk!
 ## Details
 
 Tags:
+  * `2.1.32`
+    * aws `2.1.32`
+	* alpine `3.13.3`
+	* docker `20.10.5`
+    * docker-compose `1.28.6`
+	* docker-buildx `0.5.1`
+	* kubectl `1.20.5`
+	* helm `3.5.3`
   * `2.1.24`
     * aws `2.1.23`
 	* alpine `3.13.1`
@@ -23,13 +31,6 @@ Tags:
     * docker-compose `1.28.2`
 	* kubectl `1.20.2`
 	* helm `3.5.1`
-  * `2.1.19`
-    * aws `2.1.19`
-	* alpine `3.13.0`
-	* docker `20.10.2`
-    * docker-compose `1.27.4`
-	* kubectl `1.20.2`
-	* helm `3.5.0`
 
 ## Docker pull
 

@@ -1,4 +1,6 @@
 # UNRELEASED
+
+# 2.1.32
 - aws: [2.1.32](https://github.com/aws/aws-cli/releases/tag/2.1.32)
 - alpine: [3.13.3](https://alpinelinux.org/posts/Alpine-3.13.3-released.html)
 - docker-compose: [1.28.6](https://docs.docker.com/compose/release-notes/#1286)
