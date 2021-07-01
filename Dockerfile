@@ -50,8 +50,7 @@ FROM amazon/aws-cli:${AWS_VERSION}
 # Metadata
 LABEL maintainer="Evil Martians <admin@evilmartians.com>"
 
-RUN mkdir -p ~/.docker/cli-plugins \
-    && echo '{"credsStore": "ecr-login"}' > ~/.docker/config.json
+RUN mkdir -p ~/.docker/cli-plugins
 
 COPY --from=static-docker-source /usr/local/bin/docker /usr/local/bin/docker
 COPY --from=downloader /tmp/docker-compose /usr/local/bin/docker-compose
